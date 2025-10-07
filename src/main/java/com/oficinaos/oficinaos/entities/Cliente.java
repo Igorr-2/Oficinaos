@@ -13,14 +13,13 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Cliente {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	
-	private String nome;
-	private String telefone;
-	private String email;
-	private String endereco;
-	private String observacoes;
-	
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id; // alterado de int para Integer
+    
+    private String nome;
+    private String telefone;
+    private String email;
+    private String endereco;
+    private String observacoes;
 }
